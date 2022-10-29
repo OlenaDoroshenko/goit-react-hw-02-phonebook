@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Input from 'components/base/Input.styled';
 import Button from 'components/base/Button.styled';
 
@@ -62,4 +63,8 @@ export default class Form extends Component {
       </form>
     );
   }
+}
+
+Form.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
 }
