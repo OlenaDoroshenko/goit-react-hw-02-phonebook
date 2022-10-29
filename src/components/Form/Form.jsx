@@ -29,7 +29,7 @@ export default class Form extends Component {
   };
 
   render() {
-    const {name, number} = this.state;
+    const { name, number } = this.state;
     return (
       <form onSubmit={this.handleSubmit}>
         <label>
